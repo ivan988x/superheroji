@@ -1,14 +1,14 @@
 .header
-  position: absolute
-  width: 1920px
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
   height: 80px
-  left: 0px
   top: 0px
   background: #FFFFFF
   box-shadow: 0px 10px 40px rgba(26, 26, 26, 0.4)
 
   .logo
-    position: absolute
+    justify-self
+    display: flex
     height: 22px
     weight: 22px
     margin: 30px 10px 29px 30px
@@ -26,15 +26,13 @@
     line-height: 21px
 
   .button
-    position: absolute
+    justify-self: end
+    margin: 10px 10px 0 0
     width: 161px
     height: 60px
-    left: 1749px
-    top: 10px
     color: white
     background: #E31C79
     font-family: Posterama
-    font-size: normal
     
 
     img
