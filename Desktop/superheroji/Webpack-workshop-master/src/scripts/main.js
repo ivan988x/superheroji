@@ -10,3 +10,5 @@ import './parts/jQuery';
 
 // Example Pages
 import './pages/user-page';
+
+import './utils/api/index2.js';

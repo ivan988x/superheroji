@@ -1,15 +1,21 @@
-import { promises as fetchData } from 'scripts/utils/api'
 
-Promise.all(promises).then(function (data) {
-    {
-        data.forEach(hero => {
-            let heroObject = new Hero(hero.name, hero.powerstats);
-            heroes.push(heroObject);
-            document.getElementById("heroes").innerHTML += `
-                <li class="card">
-                    <h2 class="card-title">${heroObject.name}</h2>
-                </li>
-            `;
-        });
 
-    }})
+const fetchSuperhero = () => {
+    const promises = [];
+    for (let i = 1; i <= 8; i++) {
+        let i = Math.floor((Math.random()*731) + 1);
+        
+        const url = `http://gql.devtvornica.org/cors.php?url=https://superheroapi.com/api/3389585741075876/${i}`;
+        promises.push(fetch(url).then((res) => res.json()));
+    }
+    Promise.all(promises).then((results) => {
+        const superhero = results.map((result) => ({
+            posterama: result.name
+        }));
+        displaySuperhero(superhero);
+    });
+};
+
+const displaySuperhero = (superhero) => {
+    console.log(superhero);
+}

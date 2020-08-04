@@ -5,72 +5,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="//db.onlinewebfonts.com/c/d056bcf9dfd6ac922b71535de69e8827?family=Posterama" rel="stylesheet" type="text/css"/>
     <title>Clash of The SuperHeroes</title>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
-    
+
     <div class="header">
         <img src="img/logo.png" class="logo">
         <h1 class="title">SUPERHEROJI</h1>
-        <button class="button">NASTAVI <img src="img/arrow-right.png"></button>
+        <button class="button">NASTAVI <img class="arrow" src="img/arrow-right.png"></button>
     </div>
+    
     <div class="main-container">
         <h2>ODABERI SVOG SUPERHEROJA!</h2>
-        
         <div class="hero-container">
-            <div class="hero-card">
-                <img  alt="superhero-picture" src="https://www.superherodb.com/pictures2/portraits/10/100/15.jpg">
-                <p class="posterama ">prvi</p>
-            </div>
+            <div class="nav-container">
+                <button class="button1"><img class="arrow1" src="img/arrow-right.png"></button>
+                <div class="hero-card">
+                 
+              </div>
+                <button class="button2"><img class="arrow1" src="img/arrow-right.png"></button>
+             </div>
+           
+      
+            
         
-        <div class="hidden-card card1"></div>
-        <div class="hidden-card card2"></div>
+
         <a href="#" class="random">Nasumican odabir</a>
         <div class="hero-row">
-            <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
-            <img class="hero2" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
-            <img class="hero3" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
-            <img class="hero4" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
-            <img class="hero5" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
-            <img class="hero6" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
-            <img class="hero7" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
-            <img class="hero8" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
-            <img class="hero9" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
-            <img class="hero10" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
+
 
         </div>
     </div>
-
-    <div class="tournament-container">
-        <div class="first-clmn">
-            <img class="hero1" src="">
-            <img class="hero2"src="">
-            <img class="hero3"src="">
-            <img class="hero4"src="">
+    </div>
+    <label for="screen" class="btn"></label>
+    <input type="checkbox" id="screen" role="button">
+    
+    <div id="tournament">
+        <div class="header">
+            <img src="img/logo.png" class="logo">
+            <h1 class="title">SUPERHEROJI</h1>
+           
         </div>
-        <div class="scnd-clmn">
-            <img src="">
-            <img src="">
-        </div>
-        <div class="last-row">
-            <img src="">
-            <div class="winner">
-                <p class="posterama">Winner</p>
-                <div><img src=""> </div>
+        <div class="tournament-container">
+            <div class="center">
+        <div class="grid">
+            <div class="round">
+              <div class="round1">
+                <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
+                <div class="link"></div>
+                <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/15.jpg">
+              </div>
+              <div class="round1">
+                <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/54.jpg">
+                <div class="link"></div>
+                <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/60.jpg">
+              </div>
             </div>
-            <img src="">
-        </div>
-        <div class="">
-            <img src="">
-            <img src="">
-        </div>
-        <div class="first-clmn">
-            <img class="hero5" src="">
-            <img class="hero6" src="">
-            <img class="hero7" src="">
-            <img class="hero8" src="">
-        </div>
+            <div class="round justify-space-around">
+                <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/1.jpg">
+              <div class="link2"></div>
+              <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/11.jpg">
+            </div>
+            
 
-    </div>
-    <script src="main2.js"></script>
+            <div class="winner-grid">
+                <div class="final">
+                    <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/48.jpg">
+                </div>
+            <div class="winner">
+                <img class="winner-img" src="img/Vector.png">
+                <div class="link5"></div>
+                </div>
+                <div class="final">
+                    <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/48.jpg">
+                </div>
+            </div>
+            
+
+            
+            <div class="round justify-space-around">
+                <div class="link3"></div>
+                <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/1.jpg">
+              <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/11.jpg">
+            </div>
+            <div class="round">
+                <div class="round1">
+                  <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/154.jpg">
+                  <div class="link4"></div>
+                  <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/15.jpg">
+                </div>
+                <div class="round1">
+                  <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/54.jpg">
+                  <div class="link4"></div>
+                  <img class="hero1" src="https://www.superherodb.com/pictures2/portraits/10/100/60.jpg">
+                </div>
+              </div>
+          </div>
+            </div>
+        </div>
+       
 </body>
 </html>

@@ -1,7 +1,9 @@
 .main-container
   display: grid
-  grid-template-rows: 150px 410px 94px auto 
-  grid-template-columns: 1fr   
+  grid-template-rows: 150px 410px 94px 400px
+  grid-template-columns: 1fr  
+
+ 
   
   h2 
    
@@ -12,9 +14,79 @@
     font-style: normal
     font-weight: bold
 
+
+    
+
 .hero-container
       
         display: grid
+        grid-template-rows: 500px 90px 60px
+
+.nav-container
+        display: grid
+        justify-content: center
+        grid-template-columns: 500px 410px 500px
+
+
+        .button1
+            height: 100px
+            width: 100px
+            background-color: #BBC7D6
+            display: grid
+            justify-self: end
+            align-self: center
+            border-top-left-radius: 50%
+            border-bottom-left-radius: 50%
+            border: 1px solid #BBC7D6
+            float: left
+
+            img
+                position: relative
+                top: 40px
+                left: 40px
+                transform: rotate(180deg)
+
+
+        .button1:hover
+            background: #003DA7
+            border-radius: 50%
+                
+
+            img
+                position: relative
+                top: 40px
+                left: 40px
+
+        .button2
+            height: 100px
+            width: 100px
+            background-color: #BBC7D6
+            display: grid
+            justify-self: start
+            align-self: center
+            border-top-right-radius: 50%
+            border-bottom-right-radius: 50%
+            border: 1px solid #BBC7D6
+            float: left
+
+            img
+                position: relative
+                top: 40px
+                left: 40px
+
+        .button2:hover
+            background: #003DA7
+            border-radius: 50%
+                
+
+            img
+                position: relative
+                top: 40px
+                left: 40px
+
+
+            
+                
 
 
    
@@ -22,31 +94,45 @@
             
             width: 410px
             height: 434px
-            display: grid
-            grid-template-rows: 380px auto
-            justify-self: center
+            position: relative
+            overflow: hidden
+            float: left
             background: #ffffff
             box-shadow: 0px 10px 40px rgba(26, 26, 26, 0.4)
-        
-            img
-                margin-top: 30px
+
+
+            .active1 img
+                margin: 30px
                 width: 350px
                 height: 320px
                 justify-self: center
+                display: inline-block
+
+            .active img
+                margin: 30px
+                width: 350px
+                height: 320px
+                justify-self: center
+                display: block
+                
+
 
             p
-            
                 text-align: center
                 font-family: Posterama
-               
                 font-weight: 900
                 font-size: 20px
                 line-height: 24px
+                
+                
+                
+            
+                   
             
             
 .random   
         justify-self: center
-        margin-top: 70px
+        margin-top: 10px
         color: #003DA7
         font-size: 16px
         font-family: PosteramaText, sans-serif
@@ -59,15 +145,15 @@
     display: grid
     justify-self: center
     grid-template-columns: repeat(10,1fr)
+    margin-bottom: 62px
     
-
-   
-        
-        
     img
         width: 60px
         height: 60px
         margin: 0 5px
-        border-radius: 50%    
+        border-radius: 50%  
+        object-fit: cover  
 
-  
+
+
+
